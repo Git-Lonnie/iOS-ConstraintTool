@@ -22,7 +22,7 @@ WayneKit 是一个优雅的 Swift Auto Layout DSL 库，受 SnapKit 启发。它
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Git-Lonnie/WayneKit.git", from: "1.0.0")
+    .package(url: "https://github.com/Git-Lonnie/iOS-ConstraintTool.git", from: "1.0.0")
 ]
 ```
 
