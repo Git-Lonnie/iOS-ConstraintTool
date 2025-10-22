@@ -262,8 +262,6 @@ Wayne
 
 - 感谢 [SnapKit](https://github.com/SnapKit/SnapKit) 提供的灵感
 - 感谢所有贡献者
-
 ---
-
-Made with ❤️ by Wayne
+有问题联系QQ:540378725
 
