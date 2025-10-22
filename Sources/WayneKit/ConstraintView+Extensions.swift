@@ -63,51 +63,51 @@ extension ConstraintView {
     
     // MARK: - Constraint Attributes
     
-    public var wayne_left: ConstraintItem {
+    public var wn_left: ConstraintItem {
         return ConstraintItem(target: self, attribute: .left)
     }
     
-    public var wayne_top: ConstraintItem {
+    public var wn_top: ConstraintItem {
         return ConstraintItem(target: self, attribute: .top)
     }
     
-    public var wayne_right: ConstraintItem {
+    public var wn_right: ConstraintItem {
         return ConstraintItem(target: self, attribute: .right)
     }
     
-    public var wayne_bottom: ConstraintItem {
+    public var wn_bottom: ConstraintItem {
         return ConstraintItem(target: self, attribute: .bottom)
     }
     
-    public var wayne_leading: ConstraintItem {
+    public var wn_leading: ConstraintItem {
         return ConstraintItem(target: self, attribute: .leading)
     }
     
-    public var wayne_trailing: ConstraintItem {
+    public var wn_trailing: ConstraintItem {
         return ConstraintItem(target: self, attribute: .trailing)
     }
     
-    public var wayne_width: ConstraintItem {
+    public var wn_width: ConstraintItem {
         return ConstraintItem(target: self, attribute: .width)
     }
     
-    public var wayne_height: ConstraintItem {
+    public var wn_height: ConstraintItem {
         return ConstraintItem(target: self, attribute: .height)
     }
     
-    public var wayne_centerX: ConstraintItem {
+    public var wn_centerX: ConstraintItem {
         return ConstraintItem(target: self, attribute: .centerX)
     }
     
-    public var wayne_centerY: ConstraintItem {
+    public var wn_centerY: ConstraintItem {
         return ConstraintItem(target: self, attribute: .centerY)
     }
     
-    public var wayne_lastBaseline: ConstraintItem {
+    public var wn_lastBaseline: ConstraintItem {
         return ConstraintItem(target: self, attribute: .lastBaseline)
     }
     
-    public var wayne_firstBaseline: ConstraintItem {
+    public var wn_firstBaseline: ConstraintItem {
         return ConstraintItem(target: self, attribute: .firstBaseline)
     }
     

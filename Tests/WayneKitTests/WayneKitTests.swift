@@ -35,8 +35,8 @@ final class WayneKitTests: XCTestCase {
     
     func testMakeConstraints() {
         testView.makeConstraints { make in
-            make.top.equalTo(containerView.wayne_top).offset(10)
-            make.left.equalTo(containerView.wayne_left).offset(10)
+            make.top.equalTo(containerView.wn_top).offset(10)
+            make.left.equalTo(containerView.wn_left).offset(10)
             make.width.equalTo(100)
             make.height.equalTo(100)
         }
@@ -74,8 +74,8 @@ final class WayneKitTests: XCTestCase {
     
     func testConstraintMultiplier() {
         testView.makeConstraints { make in
-            make.width.equalTo(containerView.wayne_width).multipliedBy(0.5)
-            make.height.equalTo(containerView.wayne_height).dividedBy(2)
+            make.width.equalTo(containerView.wn_width).multipliedBy(0.5)
+            make.height.equalTo(containerView.wn_height).dividedBy(2)
         }
         
         let constraints = containerView.constraints

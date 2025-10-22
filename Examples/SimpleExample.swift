@@ -51,7 +51,7 @@ class SimpleExample {
         
         // 底部视图
         bottomBox.makeConstraints { make in
-            make.top.equalTo(topBox.wayne_bottom).offset(20)
+            make.top.equalTo(topBox.wn_bottom).offset(20)
             make.left.right.equalTo(topBox)
             make.height.equalTo(topBox)
         }
@@ -69,8 +69,8 @@ class SimpleExample {
         
         box.makeConstraints { make in
             make.center.equalTo(parentView)
-            make.width.equalTo(parentView.wayne_width).multipliedBy(0.8)
-            make.height.equalTo(box.wayne_width).multipliedBy(0.5) // 宽高比 2:1
+            make.width.equalTo(parentView.wn_width).multipliedBy(0.8)
+            make.height.equalTo(box.wn_width).multipliedBy(0.5) // 宽高比 2:1
         }
         
         return box
@@ -157,8 +157,8 @@ class SimpleExample {
                     make.left.equalTo(parentView).offset(spacing)
                 } else {
                     // 后续视图
-                    make.left.equalTo(views[index - 1].wayne_right).offset(spacing)
-                    make.width.equalTo(views[0].wayne_width) // 与第一个等宽
+                    make.left.equalTo(views[index - 1].wn_right).offset(spacing)
+                    make.width.equalTo(views[0].wn_width) // 与第一个等宽
                 }
                 
                 if index == views.count - 1 {
@@ -198,7 +198,7 @@ class SimpleExample {
         // 卡片布局
         card.makeConstraints { make in
             make.center.equalTo(parentView)
-            make.width.equalTo(parentView.wayne_width).multipliedBy(0.9)
+            make.width.equalTo(parentView.wn_width).multipliedBy(0.9)
         }
         
         // 标题布局
@@ -209,7 +209,7 @@ class SimpleExample {
         
         // 内容布局
         contentLabel.makeConstraints { make in
-            make.top.equalTo(titleLabel.wayne_bottom).offset(12)
+            make.top.equalTo(titleLabel.wn_bottom).offset(12)
             make.left.right.equalTo(titleLabel)
             make.bottom.equalTo(card).offset(-20)
         }
@@ -249,7 +249,7 @@ class CompleteExampleViewController: UIViewController {
         
         innerBox.makeConstraints { make in
             make.center.equalTo(container)
-            make.width.height.equalTo(container.wayne_width).dividedBy(2)
+            make.width.height.equalTo(container.wn_width).dividedBy(2)
         }
     }
 }

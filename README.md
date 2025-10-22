@@ -22,7 +22,7 @@ WayneKit 是一个优雅的 Swift Auto Layout DSL 库，受 SnapKit 启发。它
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/wayne/WayneKit.git", from: "1.0.0")
+    .package(url: "https://github.com/Git-Lonnie/WayneKit.git", from: "1.0.0")
 ]
 ```
 
@@ -42,8 +42,8 @@ let box = UIView()
 self.view.addSubview(box)
 
 box.makeConstraints { make in
-    make.top.equalTo(view.wayne_top).offset(20)
-    make.left.equalTo(view.wayne_left).offset(20)
+    make.top.equalTo(view.wn_top).offset(20)
+    make.left.equalTo(view.wn_left).offset(20)
     make.width.height.equalTo(100)
 }
 ```
@@ -57,7 +57,7 @@ view.addSubview(label)
 label.makeConstraints { make in
     make.centerX.equalTo(view)
     make.centerY.equalTo(view)
-    make.width.equalTo(view.wayne_width).multipliedBy(0.8)
+    make.width.equalTo(view.wn_width).multipliedBy(0.8)
 }
 ```
 
@@ -88,8 +88,8 @@ imageView.makeConstraints { make in
 // 或者使用宽高比
 imageView.makeConstraints { make in
     make.center.equalTo(view)
-    make.width.equalTo(view.wayne_width).multipliedBy(0.5)
-    make.height.equalTo(imageView.wayne_width).multipliedBy(1.5)
+    make.width.equalTo(view.wn_width).multipliedBy(0.5)
+    make.height.equalTo(imageView.wn_width).multipliedBy(1.5)
 }
 ```
 
@@ -108,7 +108,7 @@ view.makeConstraints { make in
 view.makeConstraints { make in
     make.width.greaterThanOrEqualTo(100)
     make.width.lessThanOrEqualTo(300)
-    make.height.equalTo(view.wayne_width).multipliedBy(0.5)
+    make.height.equalTo(view.wn_width).multipliedBy(0.5)
 }
 ```
 
@@ -188,9 +188,9 @@ class ViewController: UIViewController {
         }
         
         contentView.makeConstraints { make in
-            make.top.equalTo(headerView.wayne_bottom)
+            make.top.equalTo(headerView.wn_bottom)
             make.left.right.equalTo(view)
-            make.bottom.equalTo(footerView.wayne_top)
+            make.bottom.equalTo(footerView.wn_top)
         }
         
         footerView.makeConstraints { make in
@@ -218,13 +218,13 @@ for (index, view) in views.enumerated() {
         if col == 0 {
             make.left.equalTo(self.view).offset(spacing)
         } else {
-            make.left.equalTo(views[index - 1].wayne_right).offset(spacing)
+            make.left.equalTo(views[index - 1].wn_right).offset(spacing)
         }
         
         if row == 0 {
             make.top.equalTo(self.view).offset(spacing)
         } else {
-            make.top.equalTo(views[index - columns].wayne_bottom).offset(spacing)
+            make.top.equalTo(views[index - columns].wn_bottom).offset(spacing)
         }
         
         make.width.height.equalTo(100)
@@ -236,7 +236,7 @@ for (index, view) in views.enumerated() {
 
 WayneKit 是对 SnapKit 的致敬和简化实现，主要区别：
 
-1. 属性前缀：WayneKit 使用 `wayne_` 前缀（如 `wayne_top`, `wayne_left`）来避免与系统属性冲突
+1. 属性前缀：WayneKit 使用 `wn_` 前缀（如 `wn_top`, `wn_left`）来避免与系统属性冲突
 2. 简化的 API：专注于核心功能，减少复杂性
 3. 轻量级实现：代码量更小，更易于理解和定制
 

@@ -33,7 +33,7 @@
 
 #### 约束属性
 
-支持以下约束属性，使用 `wayne_` 前缀：
+支持以下约束属性，使用 `wn_` 前缀：
 - 边缘: left, right, top, bottom, leading, trailing
 - 尺寸: width, height
 - 中心: centerX, centerY

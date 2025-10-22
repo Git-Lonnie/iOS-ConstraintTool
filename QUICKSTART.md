@@ -53,7 +53,7 @@ topBox.makeConstraints { make in
 }
 
 bottomBox.makeConstraints { make in
-    make.top.equalTo(topBox.wayne_bottom).offset(10)
+    make.top.equalTo(topBox.wn_bottom).offset(10)
     make.left.right.equalTo(topBox)
     make.height.equalTo(topBox)
 }
@@ -67,8 +67,8 @@ view.addSubview(imageView)
 
 imageView.makeConstraints { make in
     make.centerX.centerY.equalTo(view)
-    make.width.equalTo(view.wayne_width).multipliedBy(0.8)
-    make.height.equalTo(imageView.wayne_width).multipliedBy(0.75) // 4:3 宽高比
+    make.width.equalTo(view.wn_width).multipliedBy(0.8)
+    make.height.equalTo(imageView.wn_width).multipliedBy(0.75) // 4:3 宽高比
 }
 ```
 
@@ -80,7 +80,7 @@ view.addSubview(flexibleView)
 
 flexibleView.makeConstraints { make in
     make.width.equalTo(200).priority(.high)  // 高优先级
-    make.width.lessThanOrEqualTo(view.wayne_width).priority(.required)  // 必需
+    make.width.lessThanOrEqualTo(view.wn_width).priority(.required)  // 必需
     make.height.equalTo(100)
 }
 ```
@@ -147,7 +147,7 @@ for (index, currentView) in views.enumerated() {
             make.top.equalTo(view).offset(20)
             make.left.right.equalTo(view).inset(20)
         } else {
-            make.top.equalTo(views[index - 1].wayne_bottom).offset(10)
+            make.top.equalTo(views[index - 1].wn_bottom).offset(10)
             make.left.right.equalTo(views[index - 1])
         }
     }
@@ -176,7 +176,7 @@ label.makeConstraints { make in
 videoView.makeConstraints { make in
     make.left.right.equalTo(view)
     make.centerY.equalTo(view)
-    make.height.equalTo(videoView.wayne_width).multipliedBy(9.0/16.0)
+    make.height.equalTo(videoView.wn_width).multipliedBy(9.0/16.0)
 }
 ```
 

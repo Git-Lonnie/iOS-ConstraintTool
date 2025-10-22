@@ -86,7 +86,7 @@ class ExampleViewController: UIViewController {
     private func setupConstraints() {
         // Header View - 固定高度，顶部对齐
         headerView.makeConstraints { make in
-            make.top.equalTo(view.wayne_top)
+            make.top.equalTo(view.wn_top)
             make.left.right.equalTo(view)
             make.height.equalTo(100)
         }
@@ -101,9 +101,9 @@ class ExampleViewController: UIViewController {
         
         // Container View - 填充剩余空间
         containerView.makeConstraints { make in
-            make.top.equalTo(headerView.wayne_bottom).offset(20)
+            make.top.equalTo(headerView.wn_bottom).offset(20)
             make.left.right.equalTo(view).inset(20)
-            make.bottom.equalTo(infoLabel.wayne_top).offset(-20)
+            make.bottom.equalTo(infoLabel.wn_top).offset(-20)
         }
         
         // Red Box - 左上角
@@ -122,14 +122,14 @@ class ExampleViewController: UIViewController {
         // Blue Box - 居中，宽度为容器的一半
         blueBox.makeConstraints { make in
             make.centerX.centerY.equalTo(containerView)
-            make.width.equalTo(containerView.wayne_width).multipliedBy(0.5)
+            make.width.equalTo(containerView.wn_width).multipliedBy(0.5)
             make.height.equalTo(100)
         }
         
         // Info Label - 底部
         infoLabel.makeConstraints { make in
             make.left.right.equalTo(view).inset(20)
-            make.bottom.equalTo(view.wayne_bottom).offset(-50)
+            make.bottom.equalTo(view.wn_bottom).offset(-50)
         }
     }
 }
@@ -170,7 +170,7 @@ class GridExampleViewController: UIViewController {
                 if col == 0 {
                     make.left.equalTo(view).offset(spacing)
                 } else {
-                    make.left.equalTo(views[index - 1].wayne_right).offset(spacing)
+                    make.left.equalTo(views[index - 1].wn_right).offset(spacing)
                 }
                 
                 // 如果是每行最后一个，设置右边距
@@ -180,14 +180,14 @@ class GridExampleViewController: UIViewController {
                 
                 // 垂直位置
                 if row == 0 {
-                    make.top.equalTo(view.wayne_top).offset(100)
+                    make.top.equalTo(view.wn_top).offset(100)
                 } else {
-                    make.top.equalTo(views[index - columns].wayne_bottom).offset(spacing)
+                    make.top.equalTo(views[index - columns].wn_bottom).offset(spacing)
                 }
                 
                 // 宽度相等（对于同一行的视图）
                 if col > 0 {
-                    make.width.equalTo(views[index - 1].wayne_width)
+                    make.width.equalTo(views[index - 1].wn_width)
                 }
                 
                 // 高度

@@ -112,10 +112,10 @@ make.top.lessThanOrEqualTo(100)  // 顶部小于或等于 100
 
 ### 2. 属性前缀
 
-使用 `wayne_` 前缀避免与系统属性冲突：
+使用 `wn_` 前缀避免与系统属性冲突：
 
 ```swift
-make.left.equalTo(view.wayne_right)
+make.left.equalTo(view.wn_right)
 ```
 
 ### 3. 简洁的修饰符
@@ -133,7 +133,7 @@ make.left.equalTo(view.wayne_right)
 |------|----------|---------|
 | 基础约束 | ✅ | ✅ |
 | 链式 API | ✅ | ✅ |
-| 属性前缀 | `wayne_` | `snp_` |
+| 属性前缀 | `wn_` | `snp_` |
 | 代码量 | 较少 | 较多 |
 | 功能完整性 | 核心功能 | 更丰富 |
 | 学习曲线 | 平缓 | 中等 |
